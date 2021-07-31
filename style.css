@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+body {
+
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+}
+#page-container {
+  padding: 0 7.5vw;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  width: 466px;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: .5s all ease;
+}
+.nav-links a:hover {
+
+  color: rgba(255, 255, 255, 0.548);
+
+}
+#logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+header {
+  display: flex;
+  height: calc(100vh - 90px);
+  align-items: center;
+
+}
+
+.header-text {
+  margin-right: 30px;
+
+}
+
+.header-text h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: rgb(228, 228, 228);
+}
+
+.header-text p {
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  color: rgb(212, 212, 212);
+}
+
+.header-img {
+  width: 50vw;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 65px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 65px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 65px -23px rgba(0, 0, 0, 0.75);
+  -webkit-user-drag: none;
+  color: white;
+}
+.button-container {
+  display: flex;
+}
+.button {
+  padding: 10px 20px;
+  outline: none;
+  border: 2px solid #43dde6;
+  font-size: 16px;
+  background-color: #43dde6;
+  cursor: pointer;
+  font-weight: bold;
+transition: .5s all ease;
+-webkit-box-shadow: -1px 0px 58px -5px rgba(67,221,230,0.29);
+-moz-box-shadow: -1px 0px 58px -5px rgba(67,221,230,0.29);
+box-shadow: -1px 0px 58px -5px rgba(67,221,230,0.29);
+
+}
+
+.button:hover{
+  -webkit-box-shadow: -1px 0px 58px 11px rgba(67,221,230,0.69);
+-moz-box-shadow: -1px 0px 58px 11px rgba(67,221,230,0.69);
+box-shadow: -1px 0px 58px 11px rgba(67,221,230,0.69);
+transform: translateY(-10px);
+}
+
+.learn-button {
+  margin: 0 30px 0 0;
+  background-color: transparent;
+  color: #43dde6;
+}
+
+.connect-button {
+  color:  rgb(32, 58, 67);
+}
+
+.loading-screen{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+top: 0;
+  display: flex;
+background-color: rgb(15, 32, 39);
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+.o-1{
+  background-color: rgb(32, 58, 67);
+}
+.o-2{
+  background-color:  rgb(44, 83, 100);
+}
+.o-3{
+  background-color:  rgb(32, 58, 67);
+}
+.o-4{
+  background-color:  rgb(47, 83, 95);
+}
+
+
+.loading-items{
+  display: flex;
+  align-items: center;
+  z-index: 3;
+
+}
+.loading-text{
+  color: white;
+  margin-right: 10px;
+  font-size: 50px;
+}
+.loading-dot{
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+@media screen and (max-width: 1000px) {
+  #page-container {
+    padding: 0 4.5vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  nav {
+  
+    margin-top: 15px;
+  }
+  header {
+    height: 100%;
+    padding:  15px 0 30px 0;
+   flex-direction: column;
+  }
+  #logo {
+    font-size: 35px;
+  }
+  nav ul {
+    display: none;
+  }
+  
+.header-text h1 {
+  font-size: 25px;
+}
+
+.header-text p {
+font-size: 16px;
+}
+.header-img {
+  width: 90vw;
+  margin-top: 30px;
+}
+.button {
+  font-size: 14px;
+}
+
+}
